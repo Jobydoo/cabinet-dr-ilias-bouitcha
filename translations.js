@@ -1,5 +1,5 @@
 /**
- * Cabinet Dr. Ilias Bouitcha - Conseil Juridique & Fiscal
+ * Cabinet Dr. Ilias Bouitcha - Consultation Fiscale & Juridique
  * Complete Bilingual Translations Dictionary (FR / AR)
  */
 
@@ -11,18 +11,19 @@ const translations = {
     nav_home: "Accueil",
     nav_about: "Parcours",
     nav_expertise: "Expertises",
+    nav_booking: "Réserver un Appel",
     nav_videos: "Vidéos & Analyses",
     nav_simulator: "Diagnostic Dossier",
     nav_faq: "FAQ",
     nav_contact: "Contact",
-    nav_cta: "Prendre RDV",
+    nav_cta: "Réserver un Appel",
     lang_btn: "العربية",
 
     // Hero Section
     hero_badge: "Docteur en Droit • Ex-Cadre au Ministère des Finances",
     hero_title: "L'Excellence Juridique et Fiscale pour Défendre vos Intérêts",
-    hero_subtitle: "Cabinet de conseil stratégique, contentieux fiscal et administratif, arbitrage et sécurisation des procédures au Maroc. Une maîtrise approfondie des rouages administratifs au service des entreprises, dirigeants et particuliers.",
-    hero_cta_consult: "Demander une Consultation",
+    hero_subtitle: "Cabinet de conseil stratégique, contentieux fiscal et administratif, formalités juridiques, arbitrage et sécurisation des procédures au Maroc. Une maîtrise approfondie des rouages administratifs au service des entreprises, dirigeants et particuliers.",
+    hero_cta_consult: "Réserver un Appel Visio",
     hero_cta_whatsapp: "WhatsApp Direct",
     hero_call_now: "Appel Direct : +212 707 971 842",
     hero_stat_1_val: "Ex-Cadre",
@@ -34,6 +35,15 @@ const translations = {
     hero_photo_badge_title: "Dr. Ilias Bouitcha",
     hero_photo_badge_sub: "Consultant Juridique & Fiscal | Arbitre Agréé",
     hero_availability: "Disponible pour consultations au Maroc & à l'international (visio)",
+
+    // Dedicated Calendly Booking Banner
+    book_pill: "Réservation Directe 24/7",
+    book_title: "Planifiez Votre Consultation Téléphonique ou Visio",
+    book_subtitle: "Accédez directement à l'agenda en ligne pour réserver un créneau dédié d'échange stratégique et confidentiel avec le Dr. Ilias Bouitcha.",
+    book_btn: "Réserver un Appel sur Calendly",
+    book_f1: "Échange Confidentiel 30 à 60 min",
+    book_f2: "Analyse Préalable de vos Pièces",
+    book_f3: "Lien Visio & Confirmation Immédiate",
 
     // Credentials / About Section
     about_pill: "Profil & Titres d'Excellence",
@@ -54,34 +64,47 @@ const translations = {
     services_title: "Nos Pôles d'Expertise & de Conseil",
     services_subtitle: "Des solutions juridiques et fiscales sur-mesure pour prévenir les risques, sécuriser vos opérations et résoudre efficacement vos litiges.",
 
-    srv_1_title: "Fiscalité Générale & des Affaires",
-    srv_1_desc: "Conseil fiscal stratégique pour entreprises et particuliers : structuration fiscale des investissements, optimisation légale de l'impôt (IS, IR, TVA), gestion des flux financiers et conformité aux dispositions du CGI.",
-    srv_1_tag: "Fiscalité",
+    // 1. Conseil en Droit Fiscal (Requested)
+    srv_fiscal_title: "Conseil en Droit Fiscal",
+    srv_fiscal_desc: "Consultations pointues et avis doctrinaux en droit fiscal marocain : analyse et interprétation des dispositions du CGI, optimisation légale de l'impôt (IS, IR, TVA), planification fiscale pour entreprises et dirigeants, structuration patrimoniale et sécurisation fiscale des transactions immobilières.",
+    srv_fiscal_tag: "Droit Fiscal",
 
+    // 2. Formalités Juridiques (Requested)
+    srv_formalites_title: "Formalités Juridiques & Vie des Sociétés",
+    srv_formalites_desc: "Prise en charge intégrale de vos démarches juridiques : constitution de sociétés, rédaction et modification des statuts, augmentations de capital, transferts de siège, cessions de parts, approbations annuelles des comptes et immatriculation au Registre du Commerce.",
+    srv_formalites_tag: "Formalités Juridiques",
+
+    // 3. Contentieux Fiscal
     srv_2_title: "Contentieux Fiscal & Vérification",
     srv_2_desc: "Assistance complète lors de vérifications de comptabilité et contrôles fiscaux. Rédaction des réponses aux notifications (art. 219 & 220 CGI), recours devant la Commission Locale de Taxation (CLT) et la Commission Nationale du Recours Fiscal (CNRF).",
     srv_2_tag: "Défense Contribuable",
 
+    // 4. Procédures Administratives
     srv_3_title: "Procédures & Relations Administratives",
     srv_3_desc: "Accompagnement dans les relations complexes avec les administrations publiques : régularisations administratives, obtention d'autorisations et d'agréments, recours gracieux et hiérarchiques contre des décisions injustifiées.",
     srv_3_tag: "Procédures",
 
+    // 5. Arbitrage
     srv_4_title: "Arbitrage & Règlement Amiable",
     srv_4_desc: "Résolution alternative des conflits commerciaux et contractuels par voie d'arbitrage institutionnel ou ad hoc, médiation et négociation de protocoles d'accord transactionnels confidentiels.",
     srv_4_tag: "Arbitrage",
 
+    // 6. Contentieux Administratif
     srv_5_title: "Contentieux Administratif",
     srv_5_desc: "Défense et représentation dans les litiges contre les personnes publiques : recours pour excès de pouvoir (REP), annulation de décisions administratives illégales, actions en responsabilité civile de l'État et plein contentieux.",
     srv_5_tag: "Tribunaux Administratifs",
 
+    // 7. Droit Administratif & Commande Publique
     srv_6_title: "Droit Administratif & Commande Publique",
     srv_6_desc: "Conseil aux entreprises soumissionnaires aux marchés publics : passation, exécution des contrats publics, pénalités de retard, résiliations et contentieux de paiement avec les établissements étatiques.",
     srv_6_tag: "Marchés Publics",
 
+    // 8. Audit Fiscal Préventif
     srv_7_title: "Audit & Sécurisation Fiscale Préventive",
     srv_7_desc: "Revue approfondie de conformité fiscale (tax review) pour déceler en amont les anomalies comptables et fiscales, éliminer les zones de risque et préparer sereinement les contrôles de l'administration.",
     srv_7_tag: "Audit",
 
+    // 9. Investisseurs & MRE
     srv_8_title: "Investisseurs & MRE (Marocains du Monde)",
     srv_8_desc: "Conseil dédié aux résidents à l'étranger et investisseurs internationaux : application des conventions fiscales bilatérales pour éviter la double imposition, rapatriement de capitaux et sécurisation patrimoniale.",
     srv_8_tag: "International",
@@ -115,9 +138,9 @@ const translations = {
     sim_opt_mre: "MRE / Investisseur Étranger",
     sim_step_2: "2. Quelle est votre situation principale ?",
     sim_sit_1: "Avis de vérification ou notification de redressement fiscal reçu",
-    sim_sit_2: "Litige ou blocage avec une administration publique (recours, décision)",
-    sim_sit_3: "Conflit contractuel ou commercial nécessitant un arbitrage / conciliation",
-    sim_sit_4: "Besoin d'un audit fiscal préventif ou conseil d'optimisation légale",
+    sim_sit_2: "Formalité juridique ou constitution de société à réaliser",
+    sim_sit_3: "Conseil en droit fiscal ou optimisation de situation fiscale",
+    sim_sit_4: "Litige ou blocage avec une administration publique (recours, décision)",
     sim_step_3: "3. Degré d'urgence :",
     sim_urg_high: "Urgent (Délai légal de 30 jours en cours d'expiration)",
     sim_urg_med: "Moyen (Dossier en constitution ou négociation)",
@@ -125,6 +148,7 @@ const translations = {
     sim_result_title: "Orientation Recommandée :",
     sim_result_desc: "Votre situation relève d'une procédure formelle encadrée par des délais stricts. Une prise en charge immédiate par un spécialiste permet de préserver vos droits et d'éviter la forclusion.",
     sim_btn_whatsapp: "Transmettre ce diagnostic via WhatsApp",
+    sim_btn_calendly: "Réserver un Appel Direct sur Calendly",
 
     // Methodology / Steps
     steps_pill: "Notre Méthode d'Accompagnement",
@@ -151,12 +175,12 @@ const translations = {
     faq_q4: "Peut-on attaquer une décision de l'administration devant le Tribunal Administratif ?",
     faq_a4: "Oui. En droit administratif marocain, tout acte administratif faisant grief peut faire l'objet d'un Recours pour Excès de Pouvoir (REP) dans les 60 jours suivant la notification ou le rejet du recours gracieux, pour incompétence, vice de forme ou violation de la loi.",
     faq_q5: "Proposez-vous des consultations à distance (visio) ?",
-    faq_a5: "Absolument. Le cabinet accompagne les clients résidant partout au Maroc (Casablanca, Rabat, Tanger, Marrakech, Fès, Agadir...) ainsi que les Marocains du Monde (MRE) et investisseurs étrangers par visioconférence sécurisée.",
+    faq_a5: "Absolument. Le cabinet accompagne les clients résidant partout au Maroc (Casablanca, Rabat, Tanger, Marrakech, Fès, Agadir...) ainsi que les Marocains du Monde (MRE) et investisseurs étrangers par visioconférence sécurisée via Calendly.",
 
     // Contact Section & Modal
     contact_pill: "Contact & Prise de Rendez-vous",
     contact_title: "Confiez Votre Dossier à un Expert Reconnu",
-    contact_subtitle: "Cabinet Dr. Ilias Bouitcha — Une réponse rapide, discrète et adaptée à la sensibilité de votre situation.",
+    contact_subtitle: "Cabinet Dr. Ilias Bouitcha — ConsultationFiscale.com — Une réponse rapide, discrète et adaptée à la sensibilité de votre situation.",
     contact_box_phone_lbl: "Téléphone & WhatsApp Direct",
     contact_box_email_lbl: "Email Professionnel",
     contact_box_loc_lbl: "Siège & Consultations",
@@ -166,8 +190,10 @@ const translations = {
     form_phone_lbl: "Numéro de Téléphone *",
     form_phone_ph: "+212 6XX XXX XXX",
     form_subject_lbl: "Objet de la Consultation *",
+    form_subject_opt_fiscal: "Conseil en Droit Fiscal",
+    form_subject_opt_formalites: "Formalités Juridiques & Sociétés",
     form_subject_opt1: "Contentieux & Contrôle Fiscal",
-    form_subject_opt2: "Conseil & Optimisation Fiscale",
+    form_subject_opt2: "Audit & Optimisation Fiscale",
     form_subject_opt3: "Litige ou Procédure Administrative",
     form_subject_opt4: "Arbitrage ou Médiation Commerciale",
     form_subject_opt5: "Autre demande juridique",
@@ -175,14 +201,15 @@ const translations = {
     form_msg_ph: "Décrivez brièvement la situation, les dates clés ou les montants en jeu...",
     form_submit_btn: "Envoyer ma Demande de Consultation",
     form_direct_wa_btn: "Écrire directement sur WhatsApp",
+    form_direct_calendly_btn: "Réserver un Appel sur Calendly",
     form_success_msg: "Merci ! Votre demande a été enregistrée. Nous vous contacterons sous 24 heures ouvrées.",
 
     // Footer
-    footer_desc: "Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances. Expertise de référence au Maroc.",
+    footer_desc: "Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances. ConsultationFiscale.com — Expertise de référence au Maroc.",
     footer_quick_links: "Liens Rapides",
     footer_practice_areas: "Pôles d'Intervention",
     footer_contact_info: "Coordonnées Directes",
-    footer_rights: "Tous droits réservés. Cabinet Dr. Ilias Bouitcha.",
+    footer_rights: "Tous droits réservés. Cabinet Dr. Ilias Bouitcha • ConsultationFiscale.com",
     footer_disclaimer: "Cabinet conseil juridique et fiscal indépendant. Informations fournies à titre indicatif et ne constituant pas une consultation formelle sans convention de mission préalable."
   },
 
@@ -193,18 +220,19 @@ const translations = {
     nav_home: "الرئيسية",
     nav_about: "المسار والكفاءة",
     nav_expertise: "مجالات الاختصاص",
+    nav_booking: "حجز مكالمة",
     nav_videos: "فيديوهات وتحليلات",
     nav_simulator: "توجيه الملف",
     nav_faq: "الأسئلة الشائعة",
     nav_contact: "اتصل بنا",
-    nav_cta: "حجز استشارة",
+    nav_cta: "حجز مكالمة",
     lang_btn: "Français",
 
     // Hero Section
     hero_badge: "دكتور في القانون والعلوم السياسية • إطار سابق بوزارة الاقتصاد والمالية",
     hero_title: "الخبرة القانونية والضريبية الرفيعة لحماية حقوقكم وتأمين مصالحكم",
-    hero_subtitle: "مكتب استشارات استراتيجية متخصص في المنازعات الضريبية، القضاء الإداري، التحكيم، والمساطر الإدارية بالمغرب. دراية دقيقة بكواليس الإدارة وإجراءاتها في خدمة المقاولات والمستثمرين والأفراد.",
-    hero_cta_consult: "طلب استشارة قانونية",
+    hero_subtitle: "مكتب استشارات استراتيجية متخصص في الاستشارات في القانون الضريبي، المساطر والإجراءات القانونية، المنازعات الضريبية، القضاء الإداري والتحكيم بالمغرب. دراية دقيقة بكواليس الإدارة وإجراءاتها في خدمة المقاولات والمستثمرين والأفراد.",
+    hero_cta_consult: "حجز مكالمة استشارية (Calendly)",
     hero_cta_whatsapp: "واتساب مباشر",
     hero_call_now: "اتصال مباشر : 842 971 707 212+",
     hero_stat_1_val: "إطار سابق",
@@ -216,6 +244,15 @@ const translations = {
     hero_photo_badge_title: "د. إلياس بويتشة",
     hero_photo_badge_sub: "مستشار قانوني وضريبي | محكّم معتمد",
     hero_availability: "متاح للاستشارات الحضورية بالمغرب وعبر تقنية التحاضر المرئي دولياً",
+
+    // Dedicated Calendly Booking Banner
+    book_pill: "حجز مباشر 24/7",
+    book_title: "احجز مكالمتك الاستشارية الهاتفية أو المرئية مباشرة",
+    book_subtitle: "ادخل إلى جدول المواعيد الإلكتروني واختر التوقيت الأنسب لجدول أعمالكم لإجراء محادثة استراتيجية وسرية مع الدكتور إلياس بويتشة.",
+    book_btn: "حجز موعد مكالمة عبر Calendly",
+    book_f1: "جلسة استشارية سرية 30 إلى 60 دقيقة",
+    book_f2: "دراسة أولية لوثائق ومعطيات الملف",
+    book_f3: "تأكيد فوري ورابط الاتصال عبر البريد الإلكتروني",
 
     // Credentials / About Section
     about_pill: "الكفاءة والألقاب العلمية",
@@ -236,34 +273,47 @@ const translations = {
     services_title: "أقطاب الاستشارة والخبرة القانونية",
     services_subtitle: "حلول قانونية وضريبية مبتكرة تهدف إلى تفادي المخاطر، تأمين المعاملات، وفض النزاعات بأعلى معايير الفعالية.",
 
-    srv_1_title: "الاستشارة والجبايات العامة",
-    srv_1_desc: "مواكبة ضريبية شاملة للشركات والأفراد : الهيكلة الجبائية للاستثمارات، تحسين العبء الضريبي في إطار القانون (الضريبة على الشركات، الضريبة على الدخل، والضريبة على القيمة المضافة)، وضمان الامتثال لمدونة الضرائب.",
-    srv_1_tag: "الجبايات",
+    // 1. Conseil en Droit Fiscal (Requested)
+    srv_fiscal_title: "الاستشارات في القانون الضريبي",
+    srv_fiscal_desc: "استشارات فقهية وتطبيقية متخصصة في القانون الضريبي المغربي : تأويل وتطبيق مقتضيات المدونة العامة للضرائب (CGI)، تحسين العبء الجبائي قانونياً (IS، IR، TVA)، التخطيط الجبائي للشركات والمسيرين، وتأمين المعاملات العقارية وإعادة هيكلة الأصول.",
+    srv_fiscal_tag: "القانون الضريبي",
 
+    // 2. Formalités Juridiques (Requested)
+    srv_formalites_title: "المساطر والإجراءات القانونية وتأسيس الشركات",
+    srv_formalites_desc: "إنجاز وتتبع كافة الإجراءات والمساطر القانونية للمقاولات : تأسيس الشركات، صياغة وملاءمة الأنظمة الأساسية (Statuts)، الزيادة في رأس المال، تحويل المقرات الاجتماعية، تفويت الحصص، المصادقة السنوية على الحسابات، والتقييد بالسجل التجاري.",
+    srv_formalites_tag: "مساطر قانونية",
+
+    // 3. Contentieux Fiscal
     srv_2_title: "المنازعات الضريبية والفحص الجبائي",
     srv_2_desc: "مواكبة كاملة أثناء عمليات تدقيق ومراقبة المحاسبة من طرف مفتشية الضرائب. صياغة الردود القانونية على الإشعارات (المادتين 219 و220)، والطعن أمام اللجان المحلية (CLT) واللجنة الوطنية للطعون الضريبية (CNRF).",
     srv_2_tag: "دفاع الملزمين",
 
+    // 4. Procédures Administratives
     srv_3_title: "المساطر والإجراءات الإدارية",
     srv_3_desc: "توجيه وتسيير المساطر المعقدة أمام مختلف الإدارات والمؤسسات العمومية : تسوية الوضعيات الإدارية، الحصول على التراخيص والاعتمادات، وصياغة التظلمات الاستعطافية والرئاسية لحل الإشكالات العالقة.",
     srv_3_tag: "المساطر الإدارية",
 
+    // 5. Arbitrage
     srv_4_title: "التحكيم والوساطة وفض النزاعات",
     srv_4_desc: "الحلول البديلة لفض المنازعات التجارية والعقارية والتعاقدية عبر مساطر التحكيم المؤسسي أو الخاص، والوساطة الاتفاقية لصياغة محاضر صلح نهائية ذات قوة تنفيذية تحافظ على علاقات الأعمال.",
     srv_4_tag: "التحكيم",
 
+    // 6. Contentieux Administratif
     srv_5_title: "القضاء الإداري والنزاعات العمومية",
     srv_5_desc: "الترافع والدفاع في النزاعات الموجهة ضد أشخاص القانون العام : دعاوى الإلغاء بسبب تجاوز السلطة ضد القرارات الإدارية المعيبة، ودعاوى التعويض والمسؤولية الإدارية أمام المحاكم ومحاكم الاستئناف الإدارية.",
     srv_5_tag: "المحاكم الإدارية",
 
+    // 7. Marchés Publics
     srv_6_title: "القانون الإداري والصفقات العمومية",
     srv_6_desc: "تقديم الاستشارات للشركات المتنافسة على الصفقات والعقود الإدارية : شروط إبرام الصفقات، تنفيذ العقود العمومية، غرامات التأخير، فسخ الصفقات، وتحصيل المستحقات والديون من المؤسسات العمومية.",
     srv_6_tag: "الصفقات العمومية",
 
+    // 8. Audit Fiscal
     srv_7_title: "التدقيق والتدريع الجبائي الوقائي",
     srv_7_desc: "مراجعة تشخيصية شاملة للوضع الضريبي والمحاسبي للشركة (Audit Fiscal) لكشف الإخلالات غير المقصودة مبكراً وتصحيحها قبل حلول لجان الفحص والتدقيق الضريبي.",
     srv_7_tag: "تدقيق وقائي",
 
+    // 9. Investisseurs & MRE
     srv_8_title: "المستثمرون ومغاربة العالم (MRE)",
     srv_8_desc: "استشارات خاصة للمغاربة المقيمين بالخارج والمستثمرين الدوليين : تطبيق اتفاقيات منع الازدواج الضريبي المبرمة مع المغرب، حماية الممتلكات وتأمين تحويل رؤوس الأموال والأرباح.",
     srv_8_tag: "دولي",
@@ -297,9 +347,9 @@ const translations = {
     sim_opt_mre: "مغربي مقيم بالخارج / مستثمر أجنبي",
     sim_step_2: "2. ما هي طبيعة الملف أو الإشكال الرئيسي ؟",
     sim_sit_1: "إشعار بفحص المحاسبة أو إشعار بالتصحيح الضريبي",
-    sim_sit_2: "نزاع أو تعثر مع إدارة عمومية (قرار مجحف، ترخيص، تظلم)",
-    sim_sit_3: "نزاع تعاقدي أو تجاري يتطلب وساطة أو تحكيماً",
-    sim_sit_4: "طلب تدقيق ضريبي وقائي أو استشارة في تحسين الجبايات",
+    sim_sit_2: "إجراء أو مسطرة قانونية / تأسيس وتعديل شركة",
+    sim_sit_3: "طلب استشارة في القانون الضريبي وتأمين المعاملات",
+    sim_sit_4: "نزاع أو تعثر مع إدارة عمومية (قرار مجحف، ترخيص، تظلم)",
     sim_step_3: "3. درجة الاستعجال :",
     sim_urg_high: "عاجل جداً (سريان أجل 30 يوماً القانوني للرد)",
     sim_urg_med: "متوسط (ملف في طور الإعداد أو التفاوض)",
@@ -307,6 +357,7 @@ const translations = {
     sim_result_title: "التشخيص والتوجيه المقترح :",
     sim_result_desc: "وضعيتكم تخضع لمساطر قانونية محددة بآجال سقوط ملزمة. التدخل الاستشاري الفوري يضمن تفادي سقوط حقوقكم القانونية والضريبية وصياغة مذكرات دفاعية محكمة.",
     sim_btn_whatsapp: "إرسال هذا التشخيص عبر واتساب فوراً",
+    sim_btn_calendly: "حجز موعد مكالمة استشارية على Calendly",
 
     // Methodology / Steps
     steps_pill: "منهجية العمل",
@@ -333,12 +384,12 @@ const translations = {
     faq_q4: "هل يمكن الطعن في القرارات الإدارية التعسفية أمام المحكمة الإدارية ؟",
     faq_a4: "نعم بكل تأكيد. يتيح القانون المغربي رفع دعوى الإلغاء بسبب تجاوز السلطة أمام المحاكم الإدارية داخل أجل 60 يوماً من تاريخ التبليغ أو رفض التظلم، ضد أي قرار إداري مشوب بعيب في الشكل أو الاختصاص أو انحراف في استعمال السلطة أو مخالفة القانون.",
     faq_q5: "هل يقدم المكتب استشارات عن بعد عبر تقنية الفيديو ؟",
-    faq_a5: "نعم، يقدم المكتب خدمات الاستشارة الحضورية بمقر المكتب، كما يواكب العملاء في كافة مدن المغرب (الرباط، الدار البيضاء، طنجة، مراكش، فاس، أكادير...) ومغاربة العالم والمستثمرين بالخارج عبر جلسات استشارية مرئية مؤمنة.",
+    faq_a5: "نعم، يقدم المكتب خدمات الاستشارة الحضورية بمقر المكتب، كما يواكب العملاء في كافة مدن المغرب (الرباط، الدار البيضاء، طنجة، مراكش، فاس، أكادير...) ومغاربة العالم والمستثمرين بالخارج عبر حجز جلسات استشارية مرئية مباشرة عبر Calendly.",
 
     // Contact Section & Modal
     contact_pill: "الاتصال وحجز المواعيد",
     contact_title: "ضع ملفكم بين يدي كفاءة قانونية وضريبية رائدة",
-    contact_subtitle: "مكتب الدكتور إلياس بويتشة — استجابة سريعة، احترافية، وسرية تامة تناسب حساسية ملفاتكم.",
+    contact_subtitle: "مكتب الدكتور إلياس بويتشة — ConsultationFiscale.com — استجابة سريعة، احترافية، وسرية تامة تناسب حساسية ملفاتكم.",
     contact_box_phone_lbl: "الهاتف والواتساب المباشر",
     contact_box_email_lbl: "البريد الإلكتروني المهني",
     contact_box_loc_lbl: "المقر والاستشارات",
@@ -348,8 +399,10 @@ const translations = {
     form_phone_lbl: "رقم الهاتف المحمول *",
     form_phone_ph: "+212 6XX XXX XXX",
     form_subject_lbl: "موضوع الاستشارة *",
+    form_subject_opt_fiscal: "استشارة في القانون الضريبي",
+    form_subject_opt_formalites: "مساطر وإجراءات قانونية وتأسيس شركات",
     form_subject_opt1: "منازعة أو فحص ضريبي",
-    form_subject_opt2: "استشارة وتأمين جبائي",
+    form_subject_opt2: "تدقيق وتأمين جبائي",
     form_subject_opt3: "نزاع أو مسطرة إدارية",
     form_subject_opt4: "تحكيم أو وساطة تجارية",
     form_subject_opt5: "استشارة قانونية أخرى",
@@ -357,14 +410,15 @@ const translations = {
     form_msg_ph: "يرجى ذكر التواريخ الهامة، الإدارة المعنية أو المبالغ التقريبية...",
     form_submit_btn: "إرسال طلب الاستشارة",
     form_direct_wa_btn: "المراسلة المباشرة عبر واتساب",
+    form_direct_calendly_btn: "حجز موعد عبر Calendly",
     form_success_msg: "شكراً لتواصلكم ! تم تسجيل طلبكم بنجاح وسنتصل بكم في غضون 24 ساعة عمل.",
 
     // Footer
-    footer_desc: "مكتب استشارات قانونية وضريبية بإشراف الدكتور إلياس بويتشة، دكتور في القانون وإطار سابق بوزارة الاقتصاد والمالية. مرجع موثوق في الاستشارة والمنازعات بالمغرب.",
+    footer_desc: "مكتب استشارات قانونية وضريبية بإشراف الدكتور إلياس بويتشة، دكتور في القانون وإطار سابق بوزارة الاقتصاد والمالية. ConsultationFiscale.com — مرجع موثوق في الاستشارة والمنازعات بالمغرب.",
     footer_quick_links: "روابط سريعة",
     footer_practice_areas: "أقطاب الخبرة",
     footer_contact_info: "معلومات التواصل",
-    footer_rights: "جميع الحقوق محفوظة. مكتب د. إلياس بويتشة.",
+    footer_rights: "جميع الحقوق محفوظة. مكتب د. إلياس بويتشة • ConsultationFiscale.com",
     footer_disclaimer: "مكتب استشارات قانونية وضريبية مستقل. المعلومات المقدمة على الموقع إرشادية ولا تغني عن الاستشارة التفصيلية بموجب اتفاقية أتعاب مؤطرة."
   }
 };

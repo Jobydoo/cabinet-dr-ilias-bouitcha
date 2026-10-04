@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Dr. Ilias Bouitcha | Conseil Juridique & Fiscal, Arbitrage et Contentieux au Maroc</title>
+  <title>Dr. Ilias Bouitcha | Consultation Fiscale & Juridique, Arbitrage au Maroc</title>
   
   <!-- Meta SEO -->
-  <meta name="description" content="Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances du Maroc. Fiscalité, contentieux fiscal, arbitrage, procédures administratives et droit administratif.">
-  <meta name="keywords" content="fiscalité maroc, contentieux fiscal, docteur en droit, ministère des finances maroc, arbitrage maroc, droit administratif maroc, vérification fiscale, CLT, CNRF, Dr Ilias Bouitcha">
+  <meta name="description" content="Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances du Maroc. Conseil en droit fiscal, formalités juridiques, contentieux fiscal, arbitrage et droit administratif. Réservez votre appel sur ConsultationFiscale.com.">
+  <meta name="keywords" content="consultation fiscale maroc, conseil droit fiscal, formalités juridiques maroc, contentieux fiscal, docteur en droit, ministère des finances maroc, arbitrage maroc, droit administratif maroc, vérification fiscale, CLT, CNRF, Dr Ilias Bouitcha, consultationfiscale.com">
   <meta name="author" content="Dr. Ilias Bouitcha">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://consultationfiscale.com/">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dr. Ilias Bouitcha | Conseil Juridique & Fiscal au Maroc">
-  <meta property="og:description" content="Docteur en Droit & Ex-Cadre au Ministère des Finances au Maroc. Expertise en fiscalité, contentieux fiscal, arbitrage et droit administratif.">
-  <meta property="og:image" content="assets/images/dr_ilias_bouitcha.jpg">
-  <meta property="og:url" content="https://ilias-bouitcha-conseil.vercel.app">
+  <meta property="og:title" content="Dr. Ilias Bouitcha | Conseil en Droit Fiscal & Formalités Juridiques au Maroc">
+  <meta property="og:description" content="Docteur en Droit & Ex-Cadre au Ministère des Finances. Conseil fiscal, formalités juridiques, contentieux et arbitrage. Réservez votre appel en ligne.">
+  <meta property="og:image" content="dr_ilias_bouitcha.jpg">
+  <meta property="og:url" content="https://consultationfiscale.com/">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Structured Data JSON-LD (LegalService Schema) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Cabinet Dr. Ilias Bouitcha - Conseil Juridique & Fiscal",
-    "image": "assets/images/dr_ilias_bouitcha.jpg",
+    "name": "Cabinet Dr. Ilias Bouitcha - Consultation Fiscale & Conseil Juridique",
+    "image": "https://consultationfiscale.com/dr_ilias_bouitcha.jpg",
     "telephone": "+212707971842",
-    "url": "https://ilias-bouitcha-conseil.vercel.app",
+    "url": "https://consultationfiscale.com/",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Rabat",
@@ -44,7 +45,8 @@
       "jobTitle": "Docteur en Droit, Ex-Cadre Ministère des Finances"
     },
     "sameAs": [
-      "https://www.instagram.com/ilias_bouitcha/"
+      "https://www.instagram.com/ilias_bouitcha/",
+      "https://calendly.com/consultationfiscale"
     ]
   }
   </script>
@@ -55,7 +57,7 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="#accueil" class="nav-brand">
-        <img src="assets/images/favicon.svg" alt="Cabinet Dr. Bouitcha" class="brand-logo-icon">
+        <img src="favicon.svg" alt="Cabinet Dr. Bouitcha" class="brand-logo-icon">
         <div class="brand-text">
           <h1 data-i18n="nav_brand_title">Dr. Ilias Bouitcha</h1>
           <span data-i18n="nav_brand_sub">Conseil Juridique & Fiscal • Arbitrage</span>
@@ -68,6 +70,7 @@
           <li><a href="#accueil" class="nav-link active" data-i18n="nav_home">Accueil</a></li>
           <li><a href="#parcours" class="nav-link" data-i18n="nav_about">Parcours</a></li>
           <li><a href="#expertises" class="nav-link" data-i18n="nav_expertise">Expertises</a></li>
+          <li><a href="#reservation" class="nav-link" style="color:#60A5FA;" data-i18n="nav_booking">Réserver un Appel</a></li>
           <li><a href="#analyses" class="nav-link" data-i18n="nav_videos">Vidéos & Analyses</a></li>
           <li><a href="#simulateur" class="nav-link" data-i18n="nav_simulator">Diagnostic Dossier</a></li>
           <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
@@ -82,7 +85,10 @@
           <span data-i18n="lang_btn">العربية</span>
         </button>
 
-        <a href="#contact" class="btn btn-primary" data-i18n="nav_cta">Prendre RDV</a>
+        <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span data-i18n="nav_cta">Réserver un Appel</span>
+        </a>
 
         <button class="mobile-menu-toggle" aria-label="Menu mobile">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -96,7 +102,7 @@
   <aside class="mobile-drawer">
     <div class="drawer-header">
       <div class="nav-brand">
-        <img src="assets/images/favicon.svg" alt="Logo" class="brand-logo-icon">
+        <img src="favicon.svg" alt="Logo" class="brand-logo-icon">
         <div class="brand-text">
           <h2 style="font-size:1.1rem;" data-i18n="nav_brand_title">Dr. Ilias Bouitcha</h2>
           <span data-i18n="nav_brand_sub">Conseil Juridique & Fiscal</span>
@@ -109,6 +115,7 @@
       <li><a href="#accueil" class="drawer-link" data-i18n="nav_home">Accueil</a></li>
       <li><a href="#parcours" class="drawer-link" data-i18n="nav_about">Parcours</a></li>
       <li><a href="#expertises" class="drawer-link" data-i18n="nav_expertise">Expertises</a></li>
+      <li><a href="#reservation" class="drawer-link" style="color:#60A5FA;" data-i18n="nav_booking">Réserver un Appel</a></li>
       <li><a href="#analyses" class="drawer-link" data-i18n="nav_videos">Vidéos & Analyses</a></li>
       <li><a href="#simulateur" class="drawer-link" data-i18n="nav_simulator">Diagnostic Dossier</a></li>
       <li><a href="#faq" class="drawer-link" data-i18n="nav_faq">FAQ</a></li>
@@ -116,14 +123,18 @@
     </ul>
 
     <div class="drawer-actions">
+      <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly" style="width:100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span data-i18n="nav_cta">Réserver un Appel</span>
+      </a>
+      <a href="https://wa.me/212707971842" target="_blank" class="btn btn-whatsapp" style="width:100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp Direct
+      </a>
       <button class="lang-toggle-btn" style="width:100%; justify-content:center;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         <span data-i18n="lang_btn">العربية</span>
       </button>
-      <a href="https://wa.me/212707971842" target="_blank" class="btn btn-whatsapp" style="width:100%;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        WhatsApp Direct
-      </a>
     </div>
   </aside>
 
@@ -143,15 +154,23 @@
         </h2>
 
         <p class="hero-subtitle" data-i18n="hero_subtitle">
-          Cabinet de conseil stratégique, contentieux fiscal et administratif, arbitrage et sécurisation des procédures au Maroc. Une maîtrise approfondie des rouages administratifs au service des entreprises, dirigeants et particuliers.
+          Cabinet de conseil stratégique, contentieux fiscal et administratif, formalités juridiques, arbitrage et sécurisation des procédures au Maroc. Une maîtrise approfondie des rouages administratifs au service des entreprises, dirigeants et particuliers.
         </p>
 
-        <!-- CTA Buttons -->
+        <!-- CTA Buttons (Including Calendly Booking) -->
         <div class="hero-cta-group">
-          <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_consult">Demander une Consultation</a>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span data-i18n="hero_cta_consult">Réserver un Appel Visio</span>
+          </a>
+
           <a href="https://wa.me/212707971842" target="_blank" class="btn btn-whatsapp">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             <span data-i18n="hero_cta_whatsapp">WhatsApp Direct</span>
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            <span>Demande Écrite</span>
           </a>
         </div>
 
@@ -181,7 +200,7 @@
       <!-- Hero Right: Photo Visual Card -->
       <div class="hero-visual-card">
         <div class="hero-image-wrapper">
-          <img src="assets/images/dr_ilias_bouitcha.jpg" alt="Dr. Ilias Bouitcha - Consultant Juridique et Fiscal">
+          <img src="dr_ilias_bouitcha.jpg" alt="Dr. Ilias Bouitcha - Consultant Juridique et Fiscal">
         </div>
 
         <!-- Floating Badge Top -->
@@ -209,6 +228,40 @@
     </div>
   </section>
 
+  <!-- Dedicated Calendly Booking Section -->
+  <section id="reservation" class="container">
+    <div class="booking-banner-card">
+      <div class="booking-banner-content">
+        <span class="section-pill" style="margin-bottom:0.75rem;" data-i18n="book_pill">Réservation Directe 24/7</span>
+        <h3 data-i18n="book_title">Planifiez Votre Consultation Téléphonique ou Visio</h3>
+        <p data-i18n="book_subtitle">Accédez directement à l'agenda en ligne pour réserver un créneau dédié d'échange stratégique et confidentiel avec le Dr. Ilias Bouitcha.</p>
+        
+        <div class="booking-features-row">
+          <div class="booking-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="book_f1">Échange Confidentiel 30 à 60 min</span>
+          </div>
+          <div class="booking-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="book_f2">Analyse Préalable de vos Pièces</span>
+          </div>
+          <div class="booking-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="book_f3">Lien Visio & Confirmation Immédiate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-action-box">
+        <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly" style="padding:1.1rem 2.2rem; font-size:1.05rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span data-i18n="book_btn">Réserver un Appel sur Calendly</span>
+        </a>
+        <span style="font-size:0.8rem; color:#94A3B8;">Plateforme sécurisée • Synchronisation calendrier Google & Outlook</span>
+      </div>
+    </div>
+  </section>
+
   <!-- About / Credentials Section -->
   <section id="parcours" class="about-section">
     <div class="container">
@@ -225,10 +278,13 @@
           <p data-i18n="about_desc_2">
             Face à une réglementation en constante évolution (Lois de Finances successives, Code Général des Impôts, réforme de la justice administrative), notre cabinet offre une vision prospective, pragmatique et résolument protectrice des droits du contribuable et des opérateurs économiques.
           </p>
-          <div style="margin-top:2rem;">
+          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly">
+              <span data-i18n="nav_cta">Réserver un Appel</span>
+            </a>
             <a href="https://www.instagram.com/ilias_bouitcha/" target="_blank" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              <span>Instagram : @ilias_bouitcha</span>
+              <span>@ilias_bouitcha</span>
             </a>
           </div>
         </div>
@@ -270,7 +326,7 @@
     </div>
   </section>
 
-  <!-- Practice Areas / Expertise Section -->
+  <!-- Practice Areas / Expertise Section (Including new requested services) -->
   <section id="expertises" class="services-section">
     <div class="container">
       <div class="section-header">
@@ -280,23 +336,39 @@
       </div>
 
       <div class="services-grid">
-        <!-- 1. Fiscalité Générale -->
-        <div class="service-card">
+        <!-- 1. Conseil en Droit Fiscal (Requested) -->
+        <div class="service-card" style="border-color:rgba(212,175,55,0.45); background:rgba(23,35,62,0.85);">
           <div class="service-header">
-            <div class="service-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div class="service-icon" style="background:rgba(212,175,55,0.2); border-color:#D4AF37; color:#F7E5A9;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            <span class="service-tag" data-i18n="srv_1_tag">Fiscalité</span>
+            <span class="service-tag" style="background:rgba(212,175,55,0.15); color:#F7E5A9; border-color:rgba(212,175,55,0.4);" data-i18n="srv_fiscal_tag">Droit Fiscal</span>
           </div>
-          <h3 data-i18n="srv_1_title">Fiscalité Générale & des Affaires</h3>
-          <p data-i18n="srv_1_desc">Conseil fiscal stratégique pour entreprises et particuliers : structuration fiscale des investissements, optimisation légale de l'impôt (IS, IR, TVA), gestion des flux financiers et conformité aux dispositions du CGI.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <h3 data-i18n="srv_fiscal_title">Conseil en Droit Fiscal</h3>
+          <p data-i18n="srv_fiscal_desc">Consultations pointues et avis doctrinaux en droit fiscal marocain : analyse et interprétation des dispositions du CGI, optimisation légale de l'impôt (IS, IR, TVA), planification fiscale pour entreprises et dirigeants, structuration patrimoniale et sécurisation fiscale des transactions immobilières.</p>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 2. Contentieux Fiscal -->
+        <!-- 2. Formalités Juridiques (Requested) -->
+        <div class="service-card" style="border-color:rgba(37,99,235,0.45); background:rgba(18,29,52,0.85);">
+          <div class="service-header">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span class="service-tag" style="background:rgba(37,99,235,0.15); color:#93C5FD; border-color:rgba(37,99,235,0.35);" data-i18n="srv_formalites_tag">Formalités Juridiques</span>
+          </div>
+          <h3 data-i18n="srv_formalites_title">Formalités Juridiques & Vie des Sociétés</h3>
+          <p data-i18n="srv_formalites_desc">Prise en charge intégrale de vos démarches juridiques : constitution de sociétés, rédaction et modification des statuts, augmentations de capital, transferts de siège, cessions de parts, approbations annuelles des comptes et immatriculation au Registre du Commerce.</p>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 3. Contentieux Fiscal -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -306,29 +378,29 @@
           </div>
           <h3 data-i18n="srv_2_title">Contentieux Fiscal & Vérification</h3>
           <p data-i18n="srv_2_desc">Assistance complète lors de vérifications de comptabilité et contrôles fiscaux. Rédaction des réponses aux notifications (art. 219 & 220 CGI), recours devant la Commission Locale de Taxation (CLT) et la Commission Nationale du Recours Fiscal (CNRF).</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 3. Procédures Administratives -->
+        <!-- 4. Procédures Administratives -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
             </div>
             <span class="service-tag" data-i18n="srv_3_tag">Procédures</span>
           </div>
           <h3 data-i18n="srv_3_title">Procédures & Relations Administratives</h3>
           <p data-i18n="srv_3_desc">Accompagnement dans les relations complexes avec les administrations publiques : régularisations administratives, obtention d'autorisations et d'agréments, recours gracieux et hiérarchiques contre des décisions injustifiées.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 4. Arbitrage -->
+        <!-- 5. Arbitrage -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -338,13 +410,13 @@
           </div>
           <h3 data-i18n="srv_4_title">Arbitrage & Règlement Amiable</h3>
           <p data-i18n="srv_4_desc">Résolution alternative des conflits commerciaux et contractuels par voie d'arbitrage institutionnel ou ad hoc, médiation et négociation de protocoles d'accord transactionnels confidentiels.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 5. Contentieux Administratif -->
+        <!-- 6. Contentieux Administratif -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -354,13 +426,13 @@
           </div>
           <h3 data-i18n="srv_5_title">Contentieux Administratif</h3>
           <p data-i18n="srv_5_desc">Défense et représentation dans les litiges contre les personnes publiques : recours pour excès de pouvoir (REP), annulation de décisions administratives illégales, actions en responsabilité civile de l'État et plein contentieux.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 6. Droit Administratif & Commande Publique -->
+        <!-- 7. Droit Administratif & Commande Publique -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -370,13 +442,13 @@
           </div>
           <h3 data-i18n="srv_6_title">Droit Administratif & Commande Publique</h3>
           <p data-i18n="srv_6_desc">Conseil aux entreprises soumissionnaires aux marchés publics : passation, exécution des contrats publics, pénalités de retard, résiliations et contentieux de paiement avec les établissements étatiques.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 7. Audit & Sécurisation Fiscale -->
+        <!-- 8. Audit & Sécurisation Fiscale -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -386,13 +458,13 @@
           </div>
           <h3 data-i18n="srv_7_title">Audit & Sécurisation Fiscale Préventive</h3>
           <p data-i18n="srv_7_desc">Revue approfondie de conformité fiscale (tax review) pour déceler en amont les anomalies comptables et fiscales, éliminer les zones de risque et préparer sereinement les contrôles de l'administration.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- 8. MRE & Investisseurs -->
+        <!-- 9. MRE & Investisseurs -->
         <div class="service-card">
           <div class="service-header">
             <div class="service-icon">
@@ -402,8 +474,8 @@
           </div>
           <h3 data-i18n="srv_8_title">Investisseurs & MRE (Marocains du Monde)</h3>
           <p data-i18n="srv_8_desc">Conseil dédié aux résidents à l'étranger et investisseurs internationaux : application des conventions fiscales bilatérales pour éviter la double imposition, rapatriement de capitaux et sécurisation patrimoniale.</p>
-          <a href="#contact" class="service-action-link">
-            <span data-i18n="nav_cta">Prendre RDV</span>
+          <a href="https://calendly.com/consultationfiscale" target="_blank" class="service-action-link">
+            <span data-i18n="nav_cta">Réserver un Appel</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -524,15 +596,15 @@
             </button>
             <button type="button" class="sim-option-btn">
               <span class="opt-bullet">●</span>
-              <span data-i18n="sim_sit_2">Litige ou blocage avec une administration publique (recours, décision)</span>
+              <span data-i18n="sim_sit_2">Formalité juridique ou constitution de société à réaliser</span>
             </button>
             <button type="button" class="sim-option-btn">
               <span class="opt-bullet">●</span>
-              <span data-i18n="sim_sit_3">Conflit contractuel ou commercial nécessitant un arbitrage / conciliation</span>
+              <span data-i18n="sim_sit_3">Conseil en droit fiscal ou optimisation de situation fiscale</span>
             </button>
             <button type="button" class="sim-option-btn">
               <span class="opt-bullet">●</span>
-              <span data-i18n="sim_sit_4">Besoin d'un audit fiscal préventif ou conseil d'optimisation légale</span>
+              <span data-i18n="sim_sit_4">Litige ou blocage avec une administration publique (recours, décision)</span>
             </button>
           </div>
         </div>
@@ -562,10 +634,16 @@
             <h4 data-i18n="sim_result_title">Orientation Recommandée :</h4>
             <p data-i18n="sim_result_desc">Votre situation relève d'une procédure formelle encadrée par des délais stricts. Une prise en charge immédiate par un spécialiste permet de préserver vos droits et d'éviter la forclusion.</p>
           </div>
-          <a id="sim-whatsapp-dispatch" href="https://wa.me/212707971842" target="_blank" class="btn btn-whatsapp" style="flex-shrink:0;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-            <span data-i18n="sim_btn_whatsapp">Transmettre ce diagnostic via WhatsApp</span>
-          </a>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; flex-shrink:0;">
+            <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span data-i18n="sim_btn_calendly">Réserver un Appel Direct sur Calendly</span>
+            </a>
+            <a id="sim-whatsapp-dispatch" href="https://wa.me/212707971842" target="_blank" class="btn btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span data-i18n="sim_btn_whatsapp">Transmettre ce diagnostic via WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -656,7 +734,7 @@
             <div class="faq-icon">+</div>
           </div>
           <div class="faq-answer">
-            <p data-i18n="faq_a5">Absolument. Le cabinet accompagne les clients résidant partout au Maroc (Casablanca, Rabat, Tanger, Marrakech, Fès, Agadir...) ainsi que les Marocains du Monde (MRE) et investisseurs étrangers par visioconférence sécurisée.</p>
+            <p data-i18n="faq_a5">Absolument. Le cabinet accompagne les clients résidant partout au Maroc (Casablanca, Rabat, Tanger, Marrakech, Fès, Agadir...) ainsi que les Marocains du Monde (MRE) et investisseurs étrangers par visioconférence sécurisée via Calendly.</p>
           </div>
         </div>
       </div>
@@ -669,12 +747,25 @@
       <div class="section-header">
         <span class="section-pill" data-i18n="contact_pill">Contact & Prise de Rendez-vous</span>
         <h2 class="section-title" data-i18n="contact_title">Confiez Votre Dossier à un Expert Reconnu</h2>
-        <p class="section-subtitle" data-i18n="contact_subtitle">Cabinet Dr. Ilias Bouitcha — Une réponse rapide, discrète et adaptée à la sensibilité de votre situation.</p>
+        <p class="section-subtitle" data-i18n="contact_subtitle">Cabinet Dr. Ilias Bouitcha — ConsultationFiscale.com — Une réponse rapide, discrète et adaptée à la sensibilité de votre situation.</p>
       </div>
 
       <div class="contact-grid">
         <!-- Contact Cards Column -->
         <div class="contact-info-col">
+          
+          <!-- Calendly Card -->
+          <div class="contact-card-box" style="border-color:rgba(0,107,255,0.4); background:rgba(0,107,255,0.06);">
+            <div class="contact-box-icon" style="background:rgba(0,107,255,0.15); border-color:rgba(0,107,255,0.4); color:#60A5FA;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="contact-box-text">
+              <h4>Réservation d'Appel (Calendly)</h4>
+              <p><a href="https://calendly.com/consultationfiscale" target="_blank" style="color:#60A5FA; font-weight:700;">calendly.com/consultationfiscale</a></p>
+              <p style="color:#94A3B8; font-size:0.85rem;">Prise de RDV en 1 minute avec lien visio instantané</p>
+            </div>
+          </div>
+
           <!-- Phone Card -->
           <div class="contact-card-box">
             <div class="contact-box-icon">
@@ -710,17 +801,6 @@
             </div>
           </div>
 
-          <!-- Instagram Link -->
-          <div class="contact-card-box">
-            <div class="contact-box-icon" style="background:rgba(220,39,67,0.12); border-color:rgba(220,39,67,0.3); color:#E1306C;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <div class="contact-box-text">
-              <h4>Instagram Officiel</h4>
-              <p><a href="https://www.instagram.com/ilias_bouitcha/" target="_blank" style="color:#F7E5A9; font-weight:600;">@ilias_bouitcha</a></p>
-              <p style="color:#94A3B8; font-size:0.85rem;">Vidéos, veille juridique et actualités</p>
-            </div>
-          </div>
         </div>
 
         <!-- Consultation Request Form -->
@@ -743,8 +823,10 @@
             <div class="form-group">
               <label for="form-subject" data-i18n="form_subject_lbl">Objet de la Consultation *</label>
               <select id="form-subject" class="form-control" required>
+                <option value="Conseil en Droit Fiscal" data-i18n="form_subject_opt_fiscal">Conseil en Droit Fiscal</option>
+                <option value="Formalités Juridiques & Sociétés" data-i18n="form_subject_opt_formalites">Formalités Juridiques & Sociétés</option>
                 <option value="Contentieux & Contrôle Fiscal" data-i18n="form_subject_opt1">Contentieux & Contrôle Fiscal</option>
-                <option value="Conseil & Optimisation Fiscale" data-i18n="form_subject_opt2">Conseil & Optimisation Fiscale</option>
+                <option value="Audit & Optimisation Fiscale" data-i18n="form_subject_opt2">Audit & Optimisation Fiscale</option>
                 <option value="Litige ou Procédure Administrative" data-i18n="form_subject_opt3">Litige ou Procédure Administrative</option>
                 <option value="Arbitrage ou Médiation Commerciale" data-i18n="form_subject_opt4">Arbitrage ou Médiation Commerciale</option>
                 <option value="Autre demande juridique" data-i18n="form_subject_opt5">Autre demande juridique</option>
@@ -760,8 +842,12 @@
               <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit_btn">
                 Envoyer ma Demande de Consultation
               </button>
+              <a href="https://calendly.com/consultationfiscale" target="_blank" class="btn btn-calendly" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span data-i18n="form_direct_calendly_btn">Réserver un Appel sur Calendly</span>
+              </a>
               <button type="button" id="form-direct-wa-btn" class="btn btn-whatsapp" style="width:100%;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 <span data-i18n="form_direct_wa_btn">Écrire directement sur WhatsApp</span>
               </button>
             </div>
@@ -777,14 +863,14 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="nav-brand" style="margin-bottom:0.75rem;">
-            <img src="assets/images/favicon.svg" alt="Logo" class="brand-logo-icon">
+            <img src="favicon.svg" alt="Logo" class="brand-logo-icon">
             <div class="brand-text">
               <h3 data-i18n="nav_brand_title">Dr. Ilias Bouitcha</h3>
               <span data-i18n="nav_brand_sub">Conseil Juridique & Fiscal • Arbitrage</span>
             </div>
           </div>
           <p data-i18n="footer_desc">
-            Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances. Expertise de référence au Maroc.
+            Cabinet de conseil juridique et fiscal dirigé par le Dr. Ilias Bouitcha, Docteur en Droit et ex-cadre au Ministère des Finances. ConsultationFiscale.com — Expertise de référence au Maroc.
           </p>
         </div>
 
@@ -794,6 +880,7 @@
             <li><a href="#accueil" data-i18n="nav_home">Accueil</a></li>
             <li><a href="#parcours" data-i18n="nav_about">Parcours</a></li>
             <li><a href="#expertises" data-i18n="nav_expertise">Expertises</a></li>
+            <li><a href="https://calendly.com/consultationfiscale" target="_blank" style="color:#60A5FA;" data-i18n="nav_booking">Réserver un Appel</a></li>
             <li><a href="#analyses" data-i18n="nav_videos">Vidéos & Analyses</a></li>
             <li><a href="#simulateur" data-i18n="nav_simulator">Diagnostic Dossier</a></li>
             <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
@@ -803,7 +890,8 @@
         <div class="footer-col">
           <h4 data-i18n="footer_practice_areas">Pôles d'Intervention</h4>
           <ul class="footer-links">
-            <li><a href="#expertises" data-i18n="srv_1_tag">Fiscalité</a></li>
+            <li><a href="#expertises" data-i18n="srv_fiscal_tag">Droit Fiscal</a></li>
+            <li><a href="#expertises" data-i18n="srv_formalites_tag">Formalités Juridiques</a></li>
             <li><a href="#expertises" data-i18n="srv_2_tag">Contentieux Fiscal</a></li>
             <li><a href="#expertises" data-i18n="srv_3_tag">Procédures Administratives</a></li>
             <li><a href="#expertises" data-i18n="srv_4_tag">Arbitrage</a></li>
@@ -814,6 +902,7 @@
         <div class="footer-col">
           <h4 data-i18n="footer_contact_info">Coordonnées Directes</h4>
           <ul class="footer-links">
+            <li><a href="https://calendly.com/consultationfiscale" target="_blank" style="color:#60A5FA;">📅 Réserver un Appel (Calendly)</a></li>
             <li><a href="tel:+212707971842">📞 +212 707 971 842</a></li>
             <li><a href="https://wa.me/212707971842" target="_blank">💬 WhatsApp Direct</a></li>
             <li><a href="https://www.instagram.com/ilias_bouitcha/" target="_blank">📸 @ilias_bouitcha</a></li>
@@ -823,28 +912,32 @@
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer_rights">© 2026 Tous droits réservés. Cabinet Dr. Ilias Bouitcha.</p>
+        <p data-i18n="footer_rights">© 2026 Tous droits réservés. Cabinet Dr. Ilias Bouitcha • ConsultationFiscale.com</p>
         <p class="footer-disclaimer" data-i18n="footer_disclaimer">Cabinet conseil juridique et fiscal indépendant. Informations fournies à titre indicatif et ne constituant pas une consultation formelle sans convention de mission préalable.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Mobile Bottom Sticky Action Bar -->
+  <!-- Mobile Bottom Sticky Action Bar (Optimized with 3 quick actions) -->
   <div class="mobile-sticky-bar">
-    <div class="mobile-bar-actions">
-      <a href="tel:+212707971842" class="mobile-bar-btn btn-secondary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span>Appel</span>
+    <div class="mobile-bar-actions" style="grid-template-columns: 1fr 1fr 1fr;">
+      <a href="https://calendly.com/consultationfiscale" target="_blank" class="mobile-bar-btn btn-calendly">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>RDV</span>
       </a>
       <a href="https://wa.me/212707971842" target="_blank" class="mobile-bar-btn btn-whatsapp">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         <span>WhatsApp</span>
+      </a>
+      <a href="tel:+212707971842" class="mobile-bar-btn btn-secondary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Appel</span>
       </a>
     </div>
   </div>
 
   <!-- Scripts -->
-  <script src="assets/js/translations.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

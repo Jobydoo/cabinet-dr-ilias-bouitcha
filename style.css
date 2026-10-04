@@ -240,9 +240,94 @@ a {
   box-shadow: 0 4px 20px rgba(220, 39, 67, 0.3);
 }
 
-.btn-instagram:hover {
+.btn-calendly {
+  background: linear-gradient(135deg, #006BFF 0%, #0050BD 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 107, 255, 0.35);
+  font-weight: 700;
+}
+
+.btn-calendly:hover {
+  background: linear-gradient(135deg, #1A7BFF 0%, #0045A8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(220, 39, 67, 0.45);
+  box-shadow: 0 8px 25px rgba(0, 107, 255, 0.55);
+}
+
+.booking-banner-card {
+  background: linear-gradient(135deg, rgba(14, 22, 38, 0.95) 0%, rgba(20, 32, 56, 0.9) 100%);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-card), 0 0 35px var(--gold-glow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin: 4.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-banner-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gold-gradient);
+}
+
+[dir="rtl"] .booking-banner-card::before {
+  left: auto;
+  right: 0;
+}
+
+.booking-banner-content h3 {
+  font-size: 1.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.booking-banner-content p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 680px;
+}
+
+.booking-features-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.booking-feat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.booking-action-box {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .booking-banner-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.25rem 1.75rem;
+  }
+  .booking-features-row {
+    justify-content: center;
+  }
 }
 
 /* ==========================================================================
