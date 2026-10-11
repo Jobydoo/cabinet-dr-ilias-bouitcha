@@ -143,20 +143,124 @@ document.addEventListener('DOMContentLoaded', () => {
     simResultBtn.setAttribute('href', waUrl);
   }
 
-  // 5. Video Play Overlay Interaction
+  // 5. Video Play & Theatre Lightbox Interaction
+  const videoLightbox = document.getElementById('video-lightbox-modal');
+  const lightboxBackdrop = document.getElementById('lightbox-backdrop');
+  const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+  const lightboxPlayerSlot = document.getElementById('lightbox-player-slot');
+  const lightboxSpinner = document.getElementById('lightbox-spinner');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxBadge = document.getElementById('lightbox-badge');
+  const lightboxIgBtn = document.getElementById('lightbox-ig-btn');
+  const lightboxCopyBtn = document.getElementById('lightbox-copy-btn');
+  const lightboxCopyText = document.getElementById('lightbox-copy-text');
+
+  function openVideoModal(reelId, title, badge) {
+    if (!videoLightbox || !lightboxPlayerSlot) return;
+
+    if (lightboxTitle) lightboxTitle.textContent = title || 'Capsule Vidéo';
+    if (lightboxBadge) lightboxBadge.textContent = badge || 'Reel Instagram • @ilias_bouitcha';
+    
+    const reelUrl = `https://www.instagram.com/reel/${reelId}/`;
+    if (lightboxIgBtn) lightboxIgBtn.setAttribute('href', reelUrl);
+
+    // Show loading spinner
+    if (lightboxSpinner) lightboxSpinner.style.display = 'flex';
+    lightboxPlayerSlot.innerHTML = '';
+
+    // Create responsive Instagram embed iframe
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.instagram.com/reel/${reelId}/embed/`;
+    iframe.setAttribute('allowtransparency', 'true');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('scrolling', 'no');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('allowfullscreen', 'true');
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.minHeight = '540px';
+    iframe.style.border = 'none';
+
+    iframe.onload = () => {
+      if (lightboxSpinner) lightboxSpinner.style.display = 'none';
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      }
+    };
+
+    lightboxPlayerSlot.appendChild(iframe);
+    videoLightbox.classList.add('active');
+    videoLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoModal() {
+    if (!videoLightbox) return;
+    videoLightbox.classList.remove('active');
+    videoLightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    // Stop playback by clearing iframe
+    if (lightboxPlayerSlot) lightboxPlayerSlot.innerHTML = '';
+  }
+
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeVideoModal);
+  if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeVideoModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoLightbox && videoLightbox.classList.contains('active')) {
+      closeVideoModal();
+    }
+  });
+
+  if (lightboxCopyBtn && lightboxCopyText) {
+    lightboxCopyBtn.addEventListener('click', () => {
+      const url = lightboxIgBtn ? lightboxIgBtn.getAttribute('href') : window.location.href;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          const originalText = lightboxCopyText.textContent;
+          const copiedMsg = (currentLang === 'ar') ? 'تم نسخ الرابط !' : 'Lien copié !';
+          lightboxCopyText.textContent = copiedMsg;
+          lightboxCopyBtn.style.borderColor = 'var(--gold-primary)';
+          setTimeout(() => {
+            lightboxCopyText.textContent = originalText;
+            lightboxCopyBtn.style.borderColor = '';
+          }, 2200);
+        });
+      }
+    });
+  }
+
+  // Bind video cards (thumbnails, play buttons, and primary watch buttons)
   const videoCards = document.querySelectorAll('.video-card');
   videoCards.forEach(card => {
-    const playBtn = card.querySelector('.play-pulse-btn');
+    const reelId = card.getAttribute('data-reel-id');
     const overlay = card.querySelector('.video-overlay-preview');
-    const iframe = card.querySelector('iframe');
+    const watchBtn = card.querySelector('.btn-watch-modal');
+    const titleEl = card.querySelector('.video-details h3');
+    const badgeEl = card.querySelector('.video-badge');
 
-    if (playBtn && overlay && iframe) {
-      playBtn.addEventListener('click', () => {
-        overlay.classList.add('hidden');
-        const src = iframe.getAttribute('data-src');
-        if (src && !iframe.getAttribute('src')) {
-          iframe.setAttribute('src', src);
+    const getTitle = () => titleEl ? titleEl.textContent : '';
+    const getBadge = () => badgeEl ? badgeEl.textContent : '';
+
+    // Clicking overlay preview opens theatre player
+    if (overlay && reelId) {
+      overlay.addEventListener('click', (e) => {
+        e.preventDefault();
+        openVideoModal(reelId, getTitle(), getBadge());
+      });
+      overlay.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openVideoModal(reelId, getTitle(), getBadge());
         }
+      });
+    }
+
+    // Clicking "Visionner la Vidéo" button opens modal
+    if (watchBtn && reelId) {
+      watchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openVideoModal(reelId, getTitle(), getBadge());
       });
     }
   });

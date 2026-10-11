@@ -124,6 +124,14 @@ const translations = {
     reel_2_desc: "Comprendre les implications juridiques entre une omission déclarative et une déclaration irrégulière : quels sont les droits du contribuable face à la taxation d'office et comment formuler une défense solide ?",
     reel_2_btn: "Voir le Reel sur Instagram",
 
+    reel_watch_btn: "Visionner la Vidéo",
+    reel_tap_to_play: "Cliquer pour lancer la vidéo",
+    reel_loading: "Chargement du lecteur Instagram...",
+    reel_open_ig_app: "Ouvrir dans l'application Instagram",
+    reel_copy_link: "Copier le lien",
+    reel_copied: "Lien copié !",
+    reel_close: "Fermer",
+
     ig_banner_title: "Suivez le Dr. Ilias Bouitcha sur Instagram",
     ig_banner_desc: "Rejoignez la communauté pour des veilles juridiques quotidiennes, des décryptages de la Loi de Finances et des conseils pratiques.",
     ig_banner_btn: "Voir le Profil @ilias_bouitcha",
@@ -332,6 +340,14 @@ const translations = {
     reel_2_title: "التصريح الضريبي الناقص والتصريح غير التام",
     reel_2_desc: "التمييز القانوني والعملي بين الإغفال أو النقصان في الإقرار الجبائي وبين عدم التمام، والآثار المترتبة عن كل حالة في مواجهة مسطرة فرض الضريبة بصورة تلقائية (Taxation d'office) ووسائل الدفاع المتاحة.",
     reel_2_btn: "مشاهدة الفيديو على إنستغرام",
+
+    reel_watch_btn: "مشاهدة الفيديو",
+    reel_tap_to_play: "اضغط لتشغيل الفيديو",
+    reel_loading: "جاري تحميل مشغل إنستغرام...",
+    reel_open_ig_app: "فتح في تطبيق إنستغرام",
+    reel_copy_link: "نسخ الرابط",
+    reel_copied: "تم نسخ الرابط !",
+    reel_close: "إغلاق",
 
     ig_banner_title: "تابع الدكتور إلياس بويتشة على إنستغرام",
     ig_banner_desc: "انضم إلى المتابعين للحصول على مستجدات قانونية يومية، شروحات لقانون المالية، ونصائح عملية لتأمين معاملاتك.",
